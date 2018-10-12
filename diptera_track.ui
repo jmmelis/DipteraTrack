@@ -1,0 +1,1941 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1140</width>
+    <height>683</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DipteraTrack</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>1124</width>
+     <height>674</height>
+    </size>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_5">
+    <item>
+     <widget class="QTabWidget" name="tabs">
+      <property name="currentIndex">
+       <number>6</number>
+      </property>
+      <widget class="QWidget" name="ses_par_tab">
+       <attribute name="title">
+        <string>Movie selection</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QWidget" name="widget" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>551</height>
+           </size>
+          </property>
+          <widget class="QTreeView" name="folder_select_tree">
+           <property name="geometry">
+            <rect>
+             <x>9</x>
+             <y>30</y>
+             <width>571</width>
+             <height>321</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>451</width>
+             <height>0</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label">
+           <property name="geometry">
+            <rect>
+             <x>9</x>
+             <y>9</y>
+             <width>128</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Select session folder:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_3">
+           <property name="geometry">
+            <rect>
+             <x>600</x>
+             <y>0</y>
+             <width>124</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Session parameters</string>
+           </property>
+          </widget>
+          <widget class="Line" name="line">
+           <property name="geometry">
+            <rect>
+             <x>590</x>
+             <y>20</y>
+             <width>511</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_2">
+           <property name="geometry">
+            <rect>
+             <x>600</x>
+             <y>30</y>
+             <width>91</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Session folder:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="ses_folder_label">
+           <property name="geometry">
+            <rect>
+             <x>620</x>
+             <y>50</y>
+             <width>471</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_5">
+           <property name="geometry">
+            <rect>
+             <x>600</x>
+             <y>90</y>
+             <width>141</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Background folder:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="bckg_folder_label">
+           <property name="geometry">
+            <rect>
+             <x>620</x>
+             <y>110</y>
+             <width>281</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+          <widget class="Line" name="line_2">
+           <property name="geometry">
+            <rect>
+             <x>580</x>
+             <y>30</y>
+             <width>20</width>
+             <height>561</height>
+            </rect>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_7">
+           <property name="geometry">
+            <rect>
+             <x>600</x>
+             <y>130</y>
+             <width>291</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Calibration folder:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="cal_folder_label">
+           <property name="geometry">
+            <rect>
+             <x>620</x>
+             <y>150</y>
+             <width>381</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_9">
+           <property name="geometry">
+            <rect>
+             <x>600</x>
+             <y>200</y>
+             <width>291</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Movie folders:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="mov_folder1_label">
+           <property name="geometry">
+            <rect>
+             <x>620</x>
+             <y>220</y>
+             <width>371</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="mov_folder2_label">
+           <property name="geometry">
+            <rect>
+             <x>620</x>
+             <y>240</y>
+             <width>371</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="mov_folder3_label">
+           <property name="geometry">
+            <rect>
+             <x>620</x>
+             <y>260</y>
+             <width>371</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="mov_folder4_label">
+           <property name="geometry">
+            <rect>
+             <x>620</x>
+             <y>280</y>
+             <width>371</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="mov_folder5_label">
+           <property name="geometry">
+            <rect>
+             <x>620</x>
+             <y>300</y>
+             <width>371</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="mov_folder6_label">
+           <property name="geometry">
+            <rect>
+             <x>620</x>
+             <y>320</y>
+             <width>371</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="mov_folder7_label">
+           <property name="geometry">
+            <rect>
+             <x>620</x>
+             <y>340</y>
+             <width>371</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="mov_folder8_label">
+           <property name="geometry">
+            <rect>
+             <x>620</x>
+             <y>360</y>
+             <width>371</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_18">
+           <property name="geometry">
+            <rect>
+             <x>600</x>
+             <y>390</y>
+             <width>301</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Camera folders:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="cam_folder1_label">
+           <property name="geometry">
+            <rect>
+             <x>620</x>
+             <y>410</y>
+             <width>371</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="cam_folder2_label">
+           <property name="geometry">
+            <rect>
+             <x>620</x>
+             <y>430</y>
+             <width>371</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="cam_folder3_label">
+           <property name="geometry">
+            <rect>
+             <x>620</x>
+             <y>450</y>
+             <width>371</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="cam_folder4_label">
+           <property name="geometry">
+            <rect>
+             <x>620</x>
+             <y>470</y>
+             <width>371</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="ses_folder_rbtn">
+           <property name="geometry">
+            <rect>
+             <x>600</x>
+             <y>50</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>RadioButton</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="bckg_folder_rbtn">
+           <property name="geometry">
+            <rect>
+             <x>600</x>
+             <y>110</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>RadioButton</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="cal_folder_rbtn">
+           <property name="geometry">
+            <rect>
+             <x>600</x>
+             <y>150</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>RadioButton</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="mov_folder1_rbtn">
+           <property name="geometry">
+            <rect>
+             <x>600</x>
+             <y>220</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>RadioButton</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="mov_folder2_rbtn">
+           <property name="geometry">
+            <rect>
+             <x>600</x>
+             <y>240</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>RadioButton</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="mov_folder3_rbtn">
+           <property name="geometry">
+            <rect>
+             <x>600</x>
+             <y>260</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>RadioButton</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="mov_folder4_rbtn">
+           <property name="geometry">
+            <rect>
+             <x>600</x>
+             <y>280</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>RadioButton</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="mov_folder5_rbtn">
+           <property name="geometry">
+            <rect>
+             <x>600</x>
+             <y>300</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>RadioButton</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="mov_folder6_rbtn">
+           <property name="geometry">
+            <rect>
+             <x>600</x>
+             <y>320</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>RadioButton</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="mov_folder7_rbtn">
+           <property name="geometry">
+            <rect>
+             <x>600</x>
+             <y>340</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>RadioButton</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="mov_folder8_rbtn">
+           <property name="geometry">
+            <rect>
+             <x>600</x>
+             <y>360</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>RadioButton</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="cam_folder1_rbtn">
+           <property name="geometry">
+            <rect>
+             <x>600</x>
+             <y>410</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>RadioButton</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="cam_folder2_rbtn">
+           <property name="geometry">
+            <rect>
+             <x>600</x>
+             <y>430</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>RadioButton</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="cam_folder3_rbtn">
+           <property name="geometry">
+            <rect>
+             <x>600</x>
+             <y>450</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>RadioButton</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="cam_folder4_rbtn">
+           <property name="geometry">
+            <rect>
+             <x>600</x>
+             <y>470</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>RadioButton</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="cam_folder5_rbtn">
+           <property name="geometry">
+            <rect>
+             <x>600</x>
+             <y>490</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>RadioButton</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="cam_folder6_rbtn">
+           <property name="geometry">
+            <rect>
+             <x>600</x>
+             <y>510</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>RadioButton</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="cam_folder5_label">
+           <property name="geometry">
+            <rect>
+             <x>620</x>
+             <y>490</y>
+             <width>371</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="cam_folder6_label">
+           <property name="geometry">
+            <rect>
+             <x>620</x>
+             <y>510</y>
+             <width>371</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_25">
+           <property name="geometry">
+            <rect>
+             <x>600</x>
+             <y>540</y>
+             <width>201</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Frame name:</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="frame_name_rbtn">
+           <property name="geometry">
+            <rect>
+             <x>600</x>
+             <y>560</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>RadioButton</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="frame_name_label">
+           <property name="geometry">
+            <rect>
+             <x>620</x>
+             <y>560</y>
+             <width>391</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_27">
+           <property name="geometry">
+            <rect>
+             <x>930</x>
+             <y>80</y>
+             <width>161</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Background image format:</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="bck_img_fmt_box">
+           <property name="geometry">
+            <rect>
+             <x>1020</x>
+             <y>100</y>
+             <width>79</width>
+             <height>23</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_28">
+           <property name="geometry">
+            <rect>
+             <x>930</x>
+             <y>130</y>
+             <width>161</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Calibration image format:</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="cal_img_fmt_box">
+           <property name="geometry">
+            <rect>
+             <x>1020</x>
+             <y>150</y>
+             <width>79</width>
+             <height>23</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_29">
+           <property name="geometry">
+            <rect>
+             <x>970</x>
+             <y>540</y>
+             <width>131</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Frame image format:</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="frame_img_fmt_box">
+           <property name="geometry">
+            <rect>
+             <x>1020</x>
+             <y>560</y>
+             <width>79</width>
+             <height>23</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="Line" name="line_4">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>460</y>
+             <width>571</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+          <widget class="Line" name="line_5">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>580</y>
+             <width>1091</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_30">
+           <property name="geometry">
+            <rect>
+             <x>250</x>
+             <y>470</y>
+             <width>151</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Trigger settings</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="start_frame_spin">
+           <property name="geometry">
+            <rect>
+             <x>120</x>
+             <y>490</y>
+             <width>91</width>
+             <height>24</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_31">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>490</y>
+             <width>101</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>start frame nr:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_32">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>520</y>
+             <width>101</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>trigger frame nr:</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="trig_frame_spin">
+           <property name="geometry">
+            <rect>
+             <x>120</x>
+             <y>520</y>
+             <width>91</width>
+             <height>24</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_33">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>550</y>
+             <width>101</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>end frame nr:</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="end_frame_spin">
+           <property name="geometry">
+            <rect>
+             <x>120</x>
+             <y>550</y>
+             <width>91</width>
+             <height>24</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_34">
+           <property name="geometry">
+            <rect>
+             <x>250</x>
+             <y>490</y>
+             <width>91</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Trigger mode:</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="trig_mode_box">
+           <property name="geometry">
+            <rect>
+             <x>350</x>
+             <y>490</y>
+             <width>111</width>
+             <height>23</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="Line" name="line_3">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>350</y>
+             <width>571</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_4">
+           <property name="geometry">
+            <rect>
+             <x>250</x>
+             <y>360</y>
+             <width>101</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Model settings</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="mdl_loc_rbtn">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>400</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>RadioButton</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="mdl_loc_label">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>400</y>
+             <width>541</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_10">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>380</y>
+             <width>171</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Model location:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_11">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>420</y>
+             <width>141</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Model name:</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="mdl_name_rbtn">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>440</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>RadioButton</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="mdl_name_label">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>440</y>
+             <width>541</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_6">
+           <property name="geometry">
+            <rect>
+             <x>600</x>
+             <y>170</y>
+             <width>101</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Calibration file:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="cal_file_label">
+           <property name="geometry">
+            <rect>
+             <x>710</x>
+             <y>170</y>
+             <width>291</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_8">
+           <property name="geometry">
+            <rect>
+             <x>600</x>
+             <y>70</y>
+             <width>101</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Session name:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="ses_name_label">
+           <property name="geometry">
+            <rect>
+             <x>700</x>
+             <y>70</y>
+             <width>381</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="reset_selection_push_btn">
+           <property name="geometry">
+            <rect>
+             <x>470</x>
+             <y>0</y>
+             <width>101</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>reset selection</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="start_session_push_btn">
+           <property name="geometry">
+            <rect>
+             <x>1010</x>
+             <y>600</y>
+             <width>85</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>start session</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="save_settings_push_btn">
+           <property name="geometry">
+            <rect>
+             <x>870</x>
+             <y>600</y>
+             <width>131</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>save parameter file</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="load_settings_file_label">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>600</y>
+             <width>671</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="load_settings_push_btn">
+           <property name="geometry">
+            <rect>
+             <x>720</x>
+             <y>600</y>
+             <width>141</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>load parameter file</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="load_settings_rbtn">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>600</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>RadioButton</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="focal_grid_tab">
+       <attribute name="title">
+        <string>Voxel grid</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QWidget" name="widget_2" native="true">
+          <layout class="QGridLayout" name="gridLayout_7">
+           <item row="0" column="0" rowspan="2" colspan="8">
+            <widget class="Line" name="line_9">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2" rowspan="2" colspan="3">
+            <widget class="QLabel" name="label_16">
+             <property name="text">
+              <string>Voxel grid parameters:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0" colspan="2">
+            <widget class="Line" name="line_6">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="2">
+            <widget class="QLabel" name="label_12">
+             <property name="text">
+              <string>Nx:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="3">
+            <widget class="QSpinBox" name="nx_spin"/>
+           </item>
+           <item row="3" column="4" rowspan="7" colspan="4">
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>928</width>
+               <height>213</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="4" column="2">
+            <widget class="QLabel" name="label_13">
+             <property name="text">
+              <string>Ny:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="3">
+            <widget class="QSpinBox" name="ny_spin"/>
+           </item>
+           <item row="5" column="2">
+            <widget class="QLabel" name="label_14">
+             <property name="text">
+              <string>Nz:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="3">
+            <widget class="QSpinBox" name="nz_spin"/>
+           </item>
+           <item row="6" column="2">
+            <widget class="QLabel" name="label_15">
+             <property name="text">
+              <string>ds:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="3">
+            <widget class="QDoubleSpinBox" name="ds_spin"/>
+           </item>
+           <item row="7" column="2">
+            <widget class="QLabel" name="label_17">
+             <property name="text">
+              <string>x0:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="3">
+            <widget class="QDoubleSpinBox" name="x0_spin"/>
+           </item>
+           <item row="8" column="2">
+            <widget class="QLabel" name="label_19">
+             <property name="text">
+              <string>y0:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="3">
+            <widget class="QDoubleSpinBox" name="y0_spin"/>
+           </item>
+           <item row="9" column="2">
+            <widget class="QLabel" name="label_20">
+             <property name="text">
+              <string>z0:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="3">
+            <widget class="QDoubleSpinBox" name="z0_spin"/>
+           </item>
+           <item row="10" column="0" colspan="7">
+            <widget class="Line" name="line_7">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="7" rowspan="2">
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>696</width>
+               <height>48</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="11" column="0" colspan="4">
+            <widget class="QPushButton" name="calc_vox_btn">
+             <property name="text">
+              <string>calculate voxel grid</string>
+             </property>
+            </widget>
+           </item>
+           <item row="11" column="5" colspan="2">
+            <widget class="QProgressBar" name="vox_progress_bar">
+             <property name="minimumSize">
+              <size>
+               <width>211</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="value">
+              <number>24</number>
+             </property>
+            </widget>
+           </item>
+           <item row="12" column="0" rowspan="2" colspan="8">
+            <widget class="Line" name="line_8">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="13" column="1" rowspan="2" colspan="6">
+            <widget class="QLabel" name="label_49">
+             <property name="text">
+              <string>Camera parameters:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="14" column="6" rowspan="2" colspan="2">
+            <spacer name="horizontalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>804</width>
+               <height>48</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="15" column="1" colspan="3">
+            <widget class="QLabel" name="label_50">
+             <property name="text">
+              <string>pixel size (mm):</string>
+             </property>
+            </widget>
+           </item>
+           <item row="15" column="4" colspan="2">
+            <widget class="QDoubleSpinBox" name="pixel_size_spin"/>
+           </item>
+           <item row="16" column="0" colspan="8">
+            <spacer name="verticalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>1079</width>
+               <height>267</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="model_scale_tab">
+       <attribute name="title">
+        <string>Scale model</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QWidget" name="widget_3" native="true">
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="0" column="0">
+            <widget class="ScaleModelWidget" name="rawFrameView">
+             <property name="minimumSize">
+              <size>
+               <width>1091</width>
+               <height>511</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QWidget" name="widget_4" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>1091</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>101</height>
+              </size>
+             </property>
+             <layout class="QGridLayout" name="gridLayout">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_22">
+                <property name="text">
+                 <string>Movie nr:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1" rowspan="4">
+               <widget class="QTableWidget" name="scaleTable">
+                <property name="minimumSize">
+                 <size>
+                  <width>411</width>
+                  <height>81</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2" rowspan="4">
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>248</width>
+                  <height>78</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="1" column="0">
+               <widget class="QSpinBox" name="raw_mov_spin"/>
+              </item>
+              <item row="1" column="3" rowspan="2">
+               <widget class="QPushButton" name="load_scale_btn">
+                <property name="text">
+                 <string>load model scale</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="4" rowspan="2">
+               <widget class="QPushButton" name="save_scale_btn">
+                <property name="text">
+                 <string>save model scale</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QSpinBox" name="raw_frame_spin"/>
+              </item>
+              <item row="1" column="5" rowspan="2">
+               <widget class="QPushButton" name="set_model_btn">
+                <property name="text">
+                 <string>set model scale</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_21">
+                <property name="text">
+                 <string>Frame:</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="model_view_tab">
+       <attribute name="title">
+        <string>Model view</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QWidget" name="model_param_disp" native="true">
+          <layout class="QGridLayout" name="gridLayout_4">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_23">
+             <property name="minimumSize">
+              <size>
+               <width>114</width>
+               <height>621</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Model parameters:</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="ModelViewWidget" name="model_view_window">
+          <property name="minimumSize">
+           <size>
+            <width>971</width>
+            <height>631</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="segment_tab">
+       <attribute name="title">
+        <string>Segmentation</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="ImageSegmentWidget" name="seg_view">
+          <property name="minimumSize">
+           <size>
+            <width>1101</width>
+            <height>481</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="seg_widget" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>1122</width>
+            <height>90</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>141</height>
+           </size>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_40">
+             <property name="text">
+              <string>movie nr:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="label_24">
+             <property name="text">
+              <string>frame:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLabel" name="label_26">
+             <property name="text">
+              <string>body threshold</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QLabel" name="label_35">
+             <property name="text">
+              <string>wing threshold</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <widget class="QLabel" name="label_36">
+             <property name="text">
+              <string>sigma</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="5">
+            <widget class="QLabel" name="label_37">
+             <property name="text">
+              <string>K</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="6">
+            <widget class="QLabel" name="label_38">
+             <property name="text">
+              <string>min body area</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="7">
+            <widget class="QLabel" name="label_39">
+             <property name="text">
+              <string>min wing area</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="8" rowspan="4">
+            <widget class="Line" name="line_10">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="9" colspan="2">
+            <widget class="QLabel" name="label_43">
+             <property name="text">
+              <string>Set image mask:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="12" rowspan="4">
+            <widget class="Line" name="line_11">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="13" rowspan="4">
+            <spacer name="horizontalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>176</width>
+               <height>110</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="14" rowspan="3">
+            <spacer name="verticalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>88</width>
+               <height>81</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="0">
+            <widget class="QSpinBox" name="seg_mov_spin"/>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSpinBox" name="seg_frame_spin"/>
+           </item>
+           <item row="1" column="2">
+            <widget class="QSpinBox" name="body_thresh_spin"/>
+           </item>
+           <item row="1" column="3">
+            <widget class="QSpinBox" name="wing_thresh_spin"/>
+           </item>
+           <item row="1" column="4">
+            <widget class="QDoubleSpinBox" name="sigma_spin"/>
+           </item>
+           <item row="1" column="5">
+            <widget class="QSpinBox" name="K_spin"/>
+           </item>
+           <item row="1" column="6">
+            <widget class="QSpinBox" name="min_body_spin"/>
+           </item>
+           <item row="1" column="7">
+            <widget class="QSpinBox" name="min_wing_spin"/>
+           </item>
+           <item row="1" column="9">
+            <widget class="QLabel" name="label_44">
+             <property name="text">
+              <string>cam nr:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="10" colspan="2">
+            <widget class="QSpinBox" name="mask_cam_nr_spin"/>
+           </item>
+           <item row="2" column="9">
+            <widget class="QLabel" name="label_45">
+             <property name="text">
+              <string>segment nr:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="10" colspan="2">
+            <widget class="QSpinBox" name="mask_seg_nr_spin"/>
+           </item>
+           <item row="3" column="0" colspan="2">
+            <widget class="QPushButton" name="seg_update_btn">
+             <property name="text">
+              <string>update</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="9">
+            <widget class="QPushButton" name="add_mask_btn">
+             <property name="text">
+              <string>add to mask</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="11">
+            <widget class="QPushButton" name="reset_mask_btn">
+             <property name="text">
+              <string>reset</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="14">
+            <widget class="QPushButton" name="continue_btn">
+             <property name="text">
+              <string>continue</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pcl_view_tab">
+       <attribute name="title">
+        <string>Pointcloud view</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <widget class="BBoxWidget" name="pcl_view">
+          <property name="minimumSize">
+           <size>
+            <width>1121</width>
+            <height>521</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_5" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>1101</width>
+            <height>111</height>
+           </size>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_8">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_41">
+             <property name="text">
+              <string>movie nr:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1" rowspan="4">
+            <widget class="QGroupBox" name="flight_select_btn_group">
+             <layout class="QGridLayout" name="gridLayout_6">
+              <item row="0" column="0">
+               <widget class="QRadioButton" name="tethered_radio_btn">
+                <property name="text">
+                 <string>tethered flight</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QRadioButton" name="free_radio_btn">
+                <property name="text">
+                 <string>free flight</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLabel" name="label_47">
+             <property name="text">
+              <string>stroke angle bound:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QLabel" name="label_51">
+             <property name="text">
+              <string>wing pitch angle bound:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4" rowspan="4">
+            <spacer name="horizontalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>456</width>
+               <height>90</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="5" rowspan="4">
+            <widget class="QGroupBox" name="view_select_group">
+             <layout class="QVBoxLayout" name="verticalLayout_3">
+              <item>
+               <widget class="QRadioButton" name="pcl_view_btn">
+                <property name="text">
+                 <string>pcl view</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="bbox_view_btn">
+                <property name="text">
+                 <string>bbox view</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="model_view_btn">
+                <property name="text">
+                 <string>model view</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QSpinBox" name="pcl_mov_spin"/>
+           </item>
+           <item row="1" column="2">
+            <widget class="QSpinBox" name="stroke_bound_spin"/>
+           </item>
+           <item row="1" column="3">
+            <widget class="QSpinBox" name="wing_pitch_bound_spin"/>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_42">
+             <property name="text">
+              <string>frame nr:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QLabel" name="label_48">
+             <property name="text">
+              <string>deviation angle bound:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="3">
+            <widget class="QLabel" name="label_46">
+             <property name="text">
+              <string>sphere radius:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QSpinBox" name="pcl_frame_spin"/>
+           </item>
+           <item row="3" column="2">
+            <widget class="QSpinBox" name="dev_bound_spin"/>
+           </item>
+           <item row="3" column="3">
+            <widget class="QDoubleSpinBox" name="sphere_radius_spin"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="opt_tab">
+       <attribute name="title">
+        <string>Contour optimization</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <widget class="QWidget" name="opt_widget" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <item>
+            <widget class="ContourViewWidget" name="contour_view"/>
+           </item>
+           <item>
+            <widget class="QWidget" name="opt_settings_widget" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>120</height>
+              </size>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_9">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_52">
+                <property name="text">
+                 <string>movie nr:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLabel" name="label_54">
+                <property name="text">
+                 <string>alpha:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2" rowspan="3">
+               <spacer name="horizontalSpacer_6">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>849</width>
+                  <height>78</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="3">
+               <widget class="QCheckBox" name="init_view_check">
+                <property name="text">
+                 <string>initial state</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QSpinBox" name="opt_mov_spin"/>
+              </item>
+              <item row="1" column="1">
+               <widget class="QDoubleSpinBox" name="alpha_spin"/>
+              </item>
+              <item row="1" column="3" rowspan="2">
+               <widget class="QCheckBox" name="dest_view_check">
+                <property name="text">
+                 <string>destination contour</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_53">
+                <property name="text">
+                 <string>frame nr:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QSpinBox" name="opt_frame_spin"/>
+              </item>
+              <item row="3" column="3">
+               <widget class="QCheckBox" name="src_view_check">
+                <property name="text">
+                 <string>source contour</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ScaleModelWidget</class>
+   <extends>QGraphicsView</extends>
+   <header>ScaleModelWidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ModelViewWidget</class>
+   <extends>QFrame</extends>
+   <header location="global">ModelViewWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ImageSegmentWidget</class>
+   <extends>QGraphicsView</extends>
+   <header>ImageSegmentWidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BBoxWidget</class>
+   <extends>QFrame</extends>
+   <header>BoundingBoxWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ContourViewWidget</class>
+   <extends>QGraphicsView</extends>
+   <header>ContourViewWidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
